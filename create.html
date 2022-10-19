@@ -1,0 +1,113 @@
+<html>
+<head>
+  <html>
+    <head>
+    <style>
+
+body{
+
+
+        background-color: pink;
+}
+     .header{
+       margin: auto;
+       max-width: 1000px;
+       
+       display: flex;
+       justify-content: space-between;
+       margin-top: 150px;
+      
+
+
+     }
+    .cont{
+
+     
+    background-color: white;
+    padding: 10px 10px;
+    
+      box-shadow: 2px 3px 12px #999;
+    }
+     
+     
+     .header img{
+       width: 300px;
+
+     }
+
+     .cont p{
+        font-size: 20px;
+        font-weight: 300px;
+        text-transform: capitalize;
+
+     }
+    
+    </style>
+    
+    
+    
+    
+    </head>
+  
+
+
+</head>
+<body>
+    <div id="dynamic">
+      
+  
+      </div>
+      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        let Arrval = ['image',  'h2',  'p'];
+        headings = ['gsfg','nhsag', 'jsahjh'];
+         let htmlstring ='';
+         htmlstring+='<div class="header">';
+        
+          Arrval.forEach((val, idx)=>{
+
+            
+            
+           htmlstring+='<div class="cont">'; 
+
+          htmlstring+= '<img src="../kavi/image2.jpg"/>';
+         
+           htmlstring +='<h2>' + headings[idx] + '</h2>';
+          
+           htmlstring +='<p>learn more about slack connect</p>';
+
+           htmlstring+='</div>';
+
+          })
+
+         
+
+          htmlstring+='</div>';
+
+          $('#dynamic').html(htmlstring);
+      
+      })
+      
+      
+      
+      
+      
+      
+      
+      
+      </script>
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
